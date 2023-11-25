@@ -19,6 +19,7 @@ int main(){
 
 void printString(char arr[]){
     for (int i=0; arr[i]!= '\0';i++ ){
-        printf("%c\n", arr [i] );
+        printf("%c", arr [i] );
     }
+    printf("\n");
 }
