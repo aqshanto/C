@@ -11,9 +11,5 @@ int main (){
     printf("Enter your first name: ");
     scanf("%s", firstName);
     printf("%s\n", firstName);
-    printf("Enter your Full name: ");
-    char fullName[100];
-    fgets(fullName, 100, stdin);
-    puts(fullName);
-
+    return 0;
 }
