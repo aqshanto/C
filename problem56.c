@@ -55,5 +55,6 @@ int main(){
 }
 
 void printInfo(struct address adds){
+    
     printf("Address is :%d, %d, %s, %s\n", adds.houseNo, adds.block, adds.city, adds.state);
 }
