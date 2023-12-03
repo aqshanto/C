@@ -19,11 +19,9 @@ int main(){
     scanf("%f", &cgpa);
 
 
-    fprintf(fptr , "%s:  ", name);
+    fprintf(fptr , "%s: ", name);
     fprintf(fptr , "%d, ", age);
     fprintf(fptr , "%f; \n", cgpa);
-
-
 
     fclose(fptr);
 }
