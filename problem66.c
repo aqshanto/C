@@ -13,7 +13,7 @@ int main(){
     float *ptr;
     ptr = (float*) malloc(n * sizeof(float));
 
-    for (int i =0; i<5; i++){
+    for (int i =0; i<n; i++){
         printf("%f\n", ptr[i]);
     }
     return 0;
