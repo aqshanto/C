@@ -11,7 +11,7 @@ int main(){
         num     = num/2;
         bin     = bin+(rem*place);
         place   = place*10;
-        count   =count+rem;
+        count   = count+rem;
     }
     
     printf("%d\n", bin);
