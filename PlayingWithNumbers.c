@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-    int bin =0, rem =0, place =1;
+    int bin =0, rem =0, place =1,n=0;
     int qnum;
     printf("Enter your Query number:");
     scanf("%d",&qnum);
@@ -11,8 +11,11 @@ int main(){
         qnum    = qnum/2;
         bin     = bin+(rem*place);
         place   = place*10;
+        n = n+rem;
     }
+    
     printf("%d\n", bin);
+    printf("%d", rem);
     int num1, num2, num3;
     printf("Enter your Candidates numbers:");
     scanf("%d %d %d",&num1, &num2, &num3);
@@ -44,7 +47,9 @@ int main(){
     }
     printf("%d\n", bin3);
     for(int i=0; i<=sizeof(qnum);i++){
-        if()
+        if(qnum){
+            ;
+        }
     }
     
     return 0;
