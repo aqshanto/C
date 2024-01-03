@@ -52,5 +52,16 @@ int main(){
     }
     printf("%d\n", bin3);
     printf("%d\n", count3);
+
+    if(count<=count1){
+        if(count1>count2&& count1>count3){
+            printf("Number with Maximum Difference: %d", num1); 
+        }
+    }
+    if(count>=count1){
+        if(count1<count2&&count1<count3){
+        printf("Number with Minimum Difference: %d",num1);
+        }
+    }
     return 0;
 }
