@@ -20,16 +20,14 @@ int main(){
     printf("%d\n", bin);
     printf("Number of 1s is %d\n", count);
 
-    int num1, num2, num3;
     int n;
     printf("Number of Candidate:");
     scanf("%d",&n);
 
-
     for(int i=0; i<n; i++){
     printf("Enter your Candidates number:");
     scanf("%d",&num);
-    int bin =0, rem =0, place =1, count=0;
+    int bin =0, rem =0, place =1,count=0;
     while (num!=0)
     {
         rem     = num%2;
@@ -45,6 +43,6 @@ int main(){
     printf("Number of 1s is %d\n", count);
     }
 
-    
+
     return 0;
 }
