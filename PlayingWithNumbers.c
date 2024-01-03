@@ -58,12 +58,15 @@ int main(){
     diff2 = count - count2;
     diff3 = count - count3;
 
-    if(diff1<=diff2){
-        if(diff1<diff3){
-            printf("Number with Minimum Difference: %d", num1);
+    if(diff1>=diff2){
+        printf("Number with Maximum Difference: %d", num1);
+    }
+    else{
+        if(diff2>diff3){
+            printf("Number with Maximum Difference: %d", num2);
         }
         else{
-            printf("Number with Minimum Difference: %d", num3);
+        printf("Number with Maximum Difference: %d", num3);
         }
     }
     return 0;
