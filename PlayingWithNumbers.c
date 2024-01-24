@@ -43,7 +43,7 @@ int main(){
     printf("%d\n", bin);
     printf("Number of 1s is %d\n", c);
     diff = q-c;
-    if(c>q){
+    if(diff<){
         maximum=c;
     }
     if(c<q){
