@@ -6,6 +6,6 @@ int main(){
     for(int i=0; i<a-1;i++){
         printf("Ho ");
     }
-    printf("Ho\n");
+    printf("Ho!\n");
     return 0;
 }
