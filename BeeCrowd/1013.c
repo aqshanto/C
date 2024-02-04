@@ -11,6 +11,6 @@ int main(){
             d = b;
         }
     }
-    printf("%d o maior\n", d);
+    printf("%d eh o maior\n", d);
     return 0;
 }
