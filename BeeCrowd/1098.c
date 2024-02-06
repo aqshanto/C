@@ -11,5 +11,5 @@ int main(){
     printf("I=2 J=?\n");
     printf("I=2 J=?\n");
     printf("I=2 J=?\n");
-    
+    return 0;
 }
