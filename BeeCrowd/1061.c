@@ -2,20 +2,12 @@
 
 int main(){
     int D1,D2,h1,h2,m1,m2,s1,s2;
-    char a1,a2,a3,a4,a5,a6,c1,c2,c3,c4;
+    char a1,a2,a3,a4,a5,a6;
 
-    // scanf("%c%c%c %d",&a1,&a2,&a3,&D1);
-    // scanf("%d %c %d %c %d", &h1,&c1,&m1,&c2,&s1);
-    // scanf("%c%c%c %d %d %c %d %c %d",&a4,&a5,&a6,&D2,&h2,&c3,&m2,&c4,&s2);
-    
-    D1 = 5;
-    D2 = 9;
-    h1 = 8;
-    h2 = 6;
-    m1 = 12;
-    m2 = 13;
-    s1 = 23;
-    s2 = 23;
+    scanf(" %c%c%c %d",&a1,&a2,&a3,&D1);
+    scanf("%d : %d : %d", &h1,&m1,&s1);
+    scanf(" %c%c%c %d",&a4,&a5,&a6,&D2);
+    scanf("%d : %d : %d", &h2,&m2,&s2);
 
     int s_time_sec,e_time_sec,event_time, rest;
     
