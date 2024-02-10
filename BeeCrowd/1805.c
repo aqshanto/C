@@ -2,12 +2,11 @@
 
 int main(){
     int A,B;
-    int sum=0;
+    long long int sum=0;
     scanf("%d %d", &A ,&B);
     for (int i=A; i<=B; i++){
-        sum =sum +A;
-        A++;
+        sum =sum +i;
     }
-    printf("%d\n",sum);
+    printf("%lld\n",sum);
     return 0;
 }
