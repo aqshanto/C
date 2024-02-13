@@ -1,12 +1,10 @@
 #include<stdio.h>
 
 int main(){
-    int A,B;
-    long long int sum=0;
-    scanf("%d %d", &A ,&B);
-    for (int i=A; i<=B; i++){
-        sum =sum +i;
-    }
-    printf("%lld\n",sum);
+    long long int A,B,sum1, sum2;
+    scanf("%lld %lld", &A ,&B);
+    sum1 = (A*(A+1))/2;
+    sum2 = (B*(B+1))/2;
+    printf("%lld\n",sum2-sum1+A);
     return 0;
 }
