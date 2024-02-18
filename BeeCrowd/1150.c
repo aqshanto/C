@@ -6,7 +6,7 @@ int main(){
     for (int i = 0;; i++)
     {
         if(z<x){
-            scanf("%d",&z);
+            scanf("%d %d",&x,&z);
         }else if (z>x)
         {
             break;
