@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-    int X,Y;
+    int X,Y,temp;
     scanf("%d %d", &X,&Y);
     if(X>0 &&Y>0)
     {
@@ -24,7 +24,11 @@ int main(){
                     printf("%d\n",i);
                 }
             }
+        }else if(X==Y)
+        {
+            
         }
+        
     }
     return 0;
 }
