@@ -21,6 +21,5 @@ int main(){
         }
         printf("%d %d\n",og,child);
     }
-    
     return 0;
 }
