@@ -1,42 +1,45 @@
 #include<stdio.h>
-
-int checkprime(int num);
-int finddigit(int num);
+#include<math.h>
 
 int main(){
-    int num;
-    scanf("%d",&num);
-    int isPrime =checkprime(num);
-    if(isPrime==0){
-        printf("Nada\n");
-    }else if(isPrime==1){
-        int digitisprime =1;
-        while (num!=0){
-            if (checkprime(finddigit(num))==0){
-                printf("Prime\n");
+    int num,reminder;
+    while (scanf("%d",&num)!=EOF){
+        int isPrime=1;
+        if(num==0 || num ==1){
+            isPrime=0;
+        }else if(num==2){
+            isPrime=1;
+        }else if(num%2==0){
+            isPrime=0;
+        }else{
+            for(int i=3;i<=sqrt(num);i+=2){
+                if(num%i==0){
+                    isPrime=0;
+                    break;
+                }
             }
-            num=num/10;
         }
-        if(checkprime(finddigit(num))==1){
-            printf("Super\n");
-        }
+        if(isPrime==0)
+            printf("Nada\n");
+        else{
+            int isSuperPrime=1;
+            while(num>=10){
+                reminder = num%10;
+                num/=10;
+                if(reminder!=2 && reminder!=3 && reminder!=5 && reminder!=7){
+                    isSuperPrime=0;
+                    break;
+                }
+            }
+            if(num!=2 && num!=3 && num!=5 && num!=7){
+                    isSuperPrime=0;
+            }
+            if(isSuperPrime==1){
+                printf("Super\n");
+            }else{
+                printf("Primo\n");
+            }
+        }        
     }
-}
-
-int checkprime(int num){
-    if(num<=1){
-        return 0;
-    }
-    for(int i=2;i<num;i++){
-        if(num%i==0){
-            return 0;
-        }
-    }
-    return 1;
-}
-
-int finddigit(int num){
-    int digit;
-    digit = num%10;
-    return digit;
+    return 0;
 }
