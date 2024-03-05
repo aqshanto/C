@@ -4,9 +4,10 @@
 
 int main(){
     char sentence[1005],check[51];
-    int count1 =2, count2=2;
+    int count1, count2;
     for(int j=0;;j++){
         fgets(sentence,1005,stdin);
+        count1 =2, count2=2;
         sentence[strlen(sentence)-1]='\0';
         if(strcmp("*",sentence)==0){
             break;
