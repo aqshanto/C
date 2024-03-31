@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "1101": "c"
-    }
+        "1101": "c",
+        "stdio.h": "c",
+        "cmath": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }
