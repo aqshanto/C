@@ -9,19 +9,27 @@ int main(){
             break;
         }
         count=0;
-        for (int i = 0; i < N; i++)
+        for (int i = 0; i < D; i++)
         {
-            for (int j = 0; j < D; j++)
+            for (int j = 0; j < N; j++)
             {
                 scanf("%d",&a[i][j]);
             }
         }
-        for (int i = 0; i < N; i++)
+        // for (int i = 0; i < D; i++)
+        // {
+        //     for (int j = 0; j < N; j++)
+        //     {
+        //         printf("%d ",a[i][j]);
+        //     }
+        //     printf("\n");
+        // }
+        for (int j = 0; j < N; j++)
         {
             count=0;
-            for (int j = 0; j < D; j++)
+            for (int i = 0; i < D; i++)
             {
-                if(a[i][j]){
+                if(a[i][j]==1){
                     count++;
                 }
             }
