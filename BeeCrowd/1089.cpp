@@ -1,21 +1,21 @@
 #include<stdio.h>
 
 int main(){
-    int n,num[10010],j,count;
-    for(int i=0;;i++){
-        scanf("%d",&n);
-        if(n==0){
+    while (1){
+        int test;
+        scanf("%d",&test);
+        if(test==0){
             break;
         }
-        for(j=1;j<=n;j++){
-            scanf("%d",&num[j]);
+        int node[test+2];
+        for(int i=1;i<=test;i++){
+            scanf("%d",&node[i]);
         }
-        num[0]=num[n-1];
-        num[n+1]=num[1];
-        count=0;
-        for(int k=0;k<(n+1);k++){
-            if((num[k+1]<num[k] && num[k+1]<num[k+2]) || (num[k+1]>num[k] && num[k+1]>num[k+2])){
-                //printf("ok %d\n",k);
+        node[0]=node[test];
+        node[test+1]=node[1];
+        int count=0;
+        for(int i=1;i<=test;i++){
+            if(((node[i]<node[i-1]) && (node[i]<node[i+1]))|| ((node[i]>node[i-1]) && (node[i]>node[i+1]))){
                 count++;
             }
         }
