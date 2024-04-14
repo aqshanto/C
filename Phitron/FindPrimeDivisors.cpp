@@ -1,3 +1,4 @@
+//https://www.hackerrank.com/contests/practice-1713096494/challenges/find-prime-divisors
 #include<stdio.h>
 
 int main(){
