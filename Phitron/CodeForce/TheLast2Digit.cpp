@@ -5,8 +5,11 @@
 int main(){
     int a,b,c,d;
     scanf("%d %d %d %d",&a,&b,&c,&d);
-    long long int multi;
-    multi=a*b*c*d;
-    printf("%lld\n",multi,multi%100);
+    a=a%100;
+    b=b%100;
+    d=d%100;
+    c=c%100;
+    int multi=a*b*c*d;
+    printf("%02d\n",multi%100);
     return 0;
 }
