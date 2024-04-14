@@ -1,42 +1,30 @@
 #include<stdio.h>
-
 int main(){
-    int N,i,j,position,count;
-    while(N!=0){
-        scanf("%d",&N);
-        if(N==0){
+    int test,i,j;
+    while(test!=0){
+        scanf("%d",&test);
+        if(test==0){
             break;
         }
-        int V[N];
-        position=0;
-        count=0;
-        for(int i=0;i<N;i++){
-            scanf("%d",&V[i]);
+        int I[test],A[test];
+        for(i=0;i<test;i++){
+            scanf("%d",&I[i]);
+            A[i]=I[i];
         }
-        for(int i=0;i<N-1;i++){
-            for(int j=i+1;j<N;j++){
-                if(V[i]<V[j]){
-                    if(i==1){
-                        position=j;
-                        //printf("ok %d\n",position);
-                    }
-                    int temp=V[i];
-                    V[i]=V[j];
-                    V[j]=temp;
-                    count++;
+        for(i=0;i<test-1;i++){
+            for(j=i+1;j<test;j++){
+                if(I[j]>I[i]){
+                    int temp=I[i];
+                    I[i]=I[j];
+                    I[j]=temp;
                 }
-            }            
+            }
         }
-        if(count==0){
-            position=1;
+        for(i=0;i<test;i++){
+            if(I[1]==A[i]){
+                printf("%d\n",i);
+                break;
+            }
         }
-        // for(int i=0;i<N;i++){
-        //     printf("arrange: ");
-        //     printf("%d ",V[i]);
-        // }
-        printf("%d\n",position+1);
     }
-    return 0;
 }
-
-//here is a issue with 3=5 3 2
