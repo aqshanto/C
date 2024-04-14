@@ -22,7 +22,7 @@ int main(){
         }
         for(i=0;i<test;i++){
             if(I[1]==A[i]){
-                printf("%d\n",i);
+                printf("%d\n",i+1);
                 break;
             }
         }
