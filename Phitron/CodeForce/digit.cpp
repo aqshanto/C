@@ -2,15 +2,16 @@
 #include<stdio.h>
 
 int main(){
-    int test,num;
+    int test;
     scanf("%d",&test);
-    for (int i = 0; i < test; i++){
+    for (int i = 1; i <=test; i++){
+        int num;
         scanf("%d",&num);
-        while (num!=0){
-            int reminder=num%10;
+        do{
+            printf("%d ",num%10);
             num/=10;
-            printf("%d ",reminder);
         }
+        while (num!=0);
         printf("\n");
     }
     
