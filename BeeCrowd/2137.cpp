@@ -20,5 +20,6 @@ int main(){
             printf("%04d\n",code[i]);
         }
     }
+    //check
     return 0;
 }
