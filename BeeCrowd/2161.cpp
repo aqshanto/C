@@ -1,15 +1,14 @@
 #include<stdio.h>
 
-double denominators(int n);
-
 int main(){
-    int n;
-    scanf("%d",&n);
-
+    int a;
+    scanf("%d",&a);
+    double n,result=0.0;
+    while(a--){
+        n=6+result;
+        result=1/n;
+    }
+    result=result+3;
+    printf("%0.10lf\n",result);
     return 0;
-}
-
-double denominators(int n){
-    double result;
-    result = 3+(1/(6))
 }
