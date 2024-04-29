@@ -34,7 +34,7 @@ int main(){
             if(count==dollarlen+comma){
                 out[i]='$';
                 break;
-            }else if(count==3 || count ==7 ||comma==11){
+            }else if(count==3 || count ==7 ||count==11){
                 out[i]=',';
                 count++;
             }else{
@@ -44,7 +44,6 @@ int main(){
             }
             //printf("j = %d count = %d out = %c\n",j,count,out[i]);
         }
-        out[a]='\0';
         for(int i=a-1;i>=0;i--){
             printf("%c",out[i]);
         }
