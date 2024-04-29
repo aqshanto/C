@@ -6,7 +6,6 @@ int main(){
     while(scanf("%s %s",dollar,cent)!=EOF){
         int dollarlen=strlen(dollar);
         int centlen=strlen(cent);
-        printf("%d %d\n",dollarlen,centlen);
         char out[50];
         if(centlen==1){
             out[0]=cent[0];
@@ -22,22 +21,31 @@ int main(){
             comma=1;
         }else if(6<dollarlen && dollarlen<=9){
             comma=2;
+        }else{
+            comma=3;
         }
+        //printf("%d %d %d\n",dollarlen,centlen,comma);
         int j=dollarlen-1;
         int count=0;
-        for(int i=3;i<(3+1+comma+dollarlen);i++){
-            if(count==dollarlen){
+        int a=comma+dollarlen+2+2;
+        //printf("%d\n",a);
+        int i;
+        for(i=3;i<a;i++){
+            if(count==dollarlen+comma){
                 out[i]='$';
                 break;
-            }else if(count%3==0){
+            }else if(count==3 || count ==7 ||comma==11){
                 out[i]=',';
+                count++;
             }else{
                 out[i]=dollar[j];
                 j--;
                 count++;
             }
+            //printf("j = %d count = %d out = %c\n",j,count,out[i]);
         }
-        for(int i=0;i<13;i++){
+        out[a]='\0';
+        for(int i=a-1;i>=0;i--){
             printf("%c",out[i]);
         }
         printf("\n");

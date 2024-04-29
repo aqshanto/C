@@ -5,7 +5,6 @@
 int main(){
     char ch[10000000];
     scanf("%s",ch);
-    printf("Hello");
     int len=strlen(ch);
     int arr[26];
     for(int i=0;i<26;i++){
