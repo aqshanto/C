@@ -12,15 +12,15 @@ int main(){
                 printf("MORTO\n");
             }
         }else{
-            int ans1=abs(x2-x1);
-            int ans2=abs(y2-y1);
+            int ans1=(x2-x1);
+            int ans2=(y2-y1);
             distance=sqrt((ans1*ans1)+(ans2*ans2));
             distance=distance+r2;
             //printf("%lf",distance);
-            if(distance>=(double)r1){
-                printf("MORTO\n");
-            }else if(distance<(double)r1){
+            if(r1>=distance){
                 printf("RICO\n");
+            }else if(r1<distance){
+                printf("MORTO\n");
             }
         }
     }
