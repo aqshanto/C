@@ -2,9 +2,12 @@
 #include<string.h>
 
 int main(){
-    int test;
+    int test=9,a=0;
     while (test!=0){
         scanf("%d",&test);
+        if(test==0){
+            break;
+        }
         char ch[test][55];
         int len[test],max=0;
         for(int i=0;i<test;i++){
@@ -13,14 +16,13 @@ int main(){
             if(len[i]>max){
                 max=len[i];
             }
+        }if(a!=0){
+            printf("\n");
         }
         for(int i=0;i<test;i++){
-            int spacelen=max-len[i];
-            for(int i=0;i<spacelen;i++){
-                printf(" ");
-            }
-            printf("%s\n",ch[i]);
+            printf("%*s\n",max,ch[i]);
         }
+        a++;
     }
     
     return 0;
