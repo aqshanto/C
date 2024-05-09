@@ -10,7 +10,7 @@ int main(){
             scanf("%d",&arr[i]);
         }
         scanf("%d",&lower);
-        if(upper+lower==7 && arr[0]+arr[2]==7 && arr[1]+arr[3]==7){
+        if(upper+lower==arr[0]+arr[2] && arr[1]+arr[3]==arr[0]+arr[2]){
             printf("SIM\n");
         }else{
             printf("NAO\n");
