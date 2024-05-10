@@ -10,7 +10,7 @@ int main(){
             break;
         }
         int start=0,count=0,i=1;
-        while(start<=n){
+        while(1){
             start+=v;
             count++;
             if(v==1 && count==1){
@@ -20,9 +20,9 @@ int main(){
                     break;
                 }
             }
-            if(count==v){
-                v--;
+            if(count==v ||start>n){
                 count=0;
+                v--;
             }
             if(start==n){
                 check=1;
@@ -31,5 +31,24 @@ int main(){
         }
         if(check==1)printf("possivel\n");
         else printf("impossivel\n");
+        // while(start<=n){
+        //     start+=v;
+        //     count++;
+        //     if(v==1 && count==1){
+        //         v=lap-i;
+        //         i++;
+        //         if(v==0){
+        //             break;
+        //         }
+        //     }
+        //     if(count==v){
+        //         v--;
+        //         count=0;
+        //     }
+        //     if(start==n){
+        //         check=1;
+        //         break;
+        //     }
+        // }
     }
 }
